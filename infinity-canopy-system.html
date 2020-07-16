@@ -18,7 +18,7 @@
     />
     <meta
       name="keywords"
-      content="bay area, south bay, east bay, north bay, San Jose, Santa Clara, Campbell, Sunnyvale, Cupertino, Milpitas, Saratoga, Los Gatos, Piedmont, Orinda, Moraga, Lafayette, Oakland Montclair, Hayward, Fremont,  Danville, Dublin, San Ramon, Alamo, Black Hawk, Fabric Awnings, Mountain View, Redwood City, Menlo Park, Palo Alto, Atherton, Portola, San Mateo, canopies, Shading structures, Durasol Retractable awnings, Solar Screen Shades, Interior Solar Screen Shades, Exterior Solar Screen Shades, Commercial Awnings, Back-lit awnings, Illuminated Signage, Residential Awnings"
+      content="bay area, south bay, east bay, north bay, san jose, santa clara, campbell, sunnyvale, cupertino, milpitas, saratoga, los gatos, piedmont, orinda, moraga, lafayette, oakland montclair, hayward, fremont,  danville, dublin, san ramon, alamo, black hawk, fabric awnings, mountain view, redwood city, menlo park, palo alto, atherton, portola, san mateo, canopies, sacramento, roseville, elkhorn, rocklin, rancho cordova, shading structures, durasol retractable awnings, solar screen shades, interior solar screen shades, exterior solar screen shades, commercial awnings, back-lit awnings, illuminated signage, residential awnings"
     />
     <meta name="ROBOTS" content="index,follow" />
     <meta http-equiv="Copyright" content="Sunset Canvas &amp; Awning" />
@@ -81,6 +81,9 @@
                   <span class="phone">East Bay: (510) 838-0154</span>
                   <span class="phone"
                     >East Contra Costa County: (925) 308-5892</span
+                  >
+                  <span class="phone"
+                    >Sacramento: (916) 000-0000</span
                   >
                   <span class="email"
                     >info@sunsetcanvasawning.com</span
@@ -277,20 +280,32 @@
             <div class="item-wrap cbp">
               <div class="cbp-item">
                 <img
-                  src="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-santa-clara.jpg"
-                  alt="image"
+                  src="assets/img/products/infinite-canopy-system/back-deck-roseville-ca.jpg"
+                  alt="infinite-canopy-system"
                 />
               </div>
               <div class="cbp-item">
                 <img
-                  src="assets/img/products/infinite-canopy-system/wall-mount-phifertex-plus-san-jose.jpg"
-                  alt="image"
+                  src="assets/img/products/infinite-canopy-system/backyard-wood-pergola-roseville-ca.jpg"
+                  alt="infinite-canopy-system"
                 />
               </div>
               <div class="cbp-item">
                 <img
-                  src="assets/img/products/infinite-canopy-system/sunbrella-linen-piedmont.jpg"
-                  alt="image"
+                  src="assets/img/products/infinite-canopy-system/poolside-elkhork-ca-1.jpg"
+                  alt="infinite-canopy-system"
+                />
+              </div>
+              <div class="cbp-item">
+                <img
+                  src="assets/img/products/infinite-canopy-system/poolside-elkhork-ca-2.jpg"
+                  alt="infinite-canopy-system"
+                />
+              </div>
+              <div class="cbp-item">
+                <img
+                  src="assets/img/products/infinite-canopy-system/poolside-rocklin-ca.jpg"
+                  alt="infinite-canopy-system"
                 />
               </div>
             </div>
@@ -601,10 +616,10 @@
           
 <p class=".span"> </p>
     <div class="child">
-        <div class="calculator" id="calculator">
-            <label for="width" class="label">Total Width</label><br>
+        <div class="calculator_stock" id="calculator_stock">
+            <label for="widthStock" class="label">Total Width</label><br>
             <div class="space">
-			<select class="input" name="width" id="width">
+			<select class="input" name="widthStock" id="widthStock">
 			<option value="5"> 5</option>  
 			<option value="10">10</option>  
 			<option value="15">15</option>  
@@ -629,39 +644,39 @@
             </div>
         </div>
 
-        <div class="calculator">
+        <div class="calculator_stock">
             <label for="length" class="label">Canopy Length</label><br>
             <div class="space"> 
                <input style="width: 50%;" type="number" min="1" max="60" class="input" name="length" id="length" 
                onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('calc').click()"  />&nbsp;Feet<br>  
+                        document.getElementById('calcStock').click()"  />&nbsp;Feet<br>  
             </div> 
         </div>
 
-        <div class="calculator">
+        <div class="calculator_stock">
             <label for="length" class="label">Canopy Width</label><br>
             <div class="space"> 
-               <name="canopyWidth" id="canopyWidth" 
+               <name="canopyWidthStock" id="canopyWidthStock" 
                onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('calc').click()"  />&nbsp;5 Feet<br>  
+                        document.getElementById('calcStock').click()"  />&nbsp;5 Feet<br>  
             </div> 
         </div>
 
 
-        <div class="button calculator ">
-            <input type="button" id="calc" class="btn" value="Calculate" onClick="calculate();" 
+        <div class="button calculator_stock ">
+            <input type="button" id="calcStock" class="btn" value="Calculate" onClick="calculateStock();" 
             onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('calc').click()" />
+                        document.getElementById('calcStock').click()" />
         </div>
         
     </div>
-    <div class="Premium" id="explain">
+    <div class="Premium" id="explainStock">
        
     </div>
     
 
     <div class="child1">
-        <div class="show" id="show">
+        <div class="showStock" id="showStock">
 
         </div>
     </div>
@@ -669,36 +684,36 @@
 
 <script type="text/javascript">
 
-    function calculate(){
-        var width= document.getElementById("width").value;
-        var canopyWidth = document.getElementById("canopyWidth").value=5;
+    function calculateStock(){
+        var widthStock= document.getElementById("widthStock").value;
+        var canopyWidthStock = document.getElementById("canopyWidthStock").value=5;
 
 
-        var ratio = canopyWidth/width;
+        var ratio = canopyWidthStock/widthStock;
         if(ratio >0)
         {
-            var section=parseInt(Math.ceil((width)/Math.ceil(canopyWidth)));
-            var graphicWidth = 20 * canopyWidth;
+            var section=parseInt(Math.ceil((widthStock)/Math.ceil(canopyWidthStock)));
+            var graphicWidthStock = 20 * canopyWidthStock;
             var length= document.getElementById("length").value;
             var panels=parseInt(Math.round((length)*12/22.5));
           
            // document.getElementById("panels").value=panels;
-            var myTable= "<table class='table' cellspacing='5' >";
+            var myTableStock= "<table class='table' cellspacing='5' >";
             for (var i=0; i<panels; i++) {
-                myTable+="<tr'>";
+                myTableStock+="<tr'>";
                 for(var j=0; j<section; j++){
-                    myTable+="<td class ='graphic_box'>&nbsp;</td>";
+                    myTableStock+="<td class='graphic_box_stock'>&nbsp;</td>";
                 }
-                myTable+="</tr>";
+                myTableStock+="</tr>";
 
             }
-            myTable+="</table>";
+            myTableStock+="</table>";
               
             
             
             var premFab;
             var satndFab;
-            if (parseInt(canopyWidth) > parseInt(width) || parseInt(canopyWidth) > 12)
+            if (parseInt(canopyWidthStock) > parseInt(widthStock) || parseInt(canopyWidthStock) > 12)
             {
                 alert('Total Width Cannot Be Less Than 5 Feet');
                 return;
@@ -707,27 +722,27 @@
             else
             {
 
-                if(canopyWidth >=4 && canopyWidth <=5)
+                if(canopyWidthStock >=4 && canopyWidthStock <=5)
                 {
                     premFab= (section*panels*130.00-section);
                     satndFab= (section*panels*100.00-section);
                 }
-                document.getElementById("show").innerHTML= myTable;
+                document.getElementById("showStock").innerHTML= myTableStock;
             }
  
-            var explain= "<p class='fon'><br>You need <b>"+section+"</b> Sections/Rows of Infinity Canopy with <b>"+panels+"</b> panels each. The estimate for your canopy is:  <br><br><b> $"+premFab+".00 with Premium Fabric <br>$"+satndFab+".00 with Standard Fabric<br><br>Optional Items: Need one not both.<br>Magnetic Latch, $65.00 ea.<br> Ball Bearing Pulley System, $65 ea.</b></p>";
-            document.getElementById("explain").innerHTML= explain;  
+            var explainStock= "<p class='font_stock'><br>You need <b>"+section+"</b> section(s)/row(s) of Infinity Canopy with <b>"+panels+"</b> panels each. The estimate for your canopy is:  <br><br><b> $"+premFab+".00 with Premium Fabric <br>$"+satndFab+".00 with Standard Fabric<br><br>Optional Items: Need one not both.<br>Magnetic Latch, $65.00 ea.<br> Ball Bearing Pulley System, $65 ea.</b></p>";
+            document.getElementById("explainStock").innerHTML= explainStock;  
         }
         else
         {
-           document.getElementById("explain").innerHTML = "<p class='fon'><br> Canopy Width Must Be greater Than Zero</p>";
+           document.getElementById("explainStock").innerHTML = "<p class='fon'><br> Canopy Width Must Be greater Than Zero</p>";
         }
 
-        var x = document.getElementsByClassName('graphic_box')
-        var w = 10 * canopyWidth + 'px';
-        for(i=0; i<x.length;i++)
+        var graphicBoxStock = document.getElementsByClassName('graphic_box_stock')
+        var calculateddWidthStock = 10 * canopyWidthStock + 'px';
+        for(let i = 0; i < graphicBoxStock.length; i++)
         {
-          x[i].style.width = w;
+          graphicBoxStock[i].style.width = calculateddWidthStock;
         }
     }
 </script>
@@ -735,16 +750,20 @@
         </section>
       </div>
 
+
       <div class="bwp-col-5 col">
         <section>
           <img
             src="assets/img/products/infinite-canopy-system/stock-canopy-estimate.webp"
-            alt=""
+            alt="infinite canopy system stock canopy estimate"
           />
         </section>
       </div>
 
-      <div class="bwp-col-12 col">
+
+
+
+      <div class="bwp-col-12 col" style="margin-top: 50px;">
         <div class="bwp-heading">
           <h2
             style="text-transform: uppercase;"
@@ -776,62 +795,63 @@
         </section>
       </div>
 
+
       <div class="bwp-col-5 col">
         <section>
           <img
             src="assets/img/products/infinite-canopy-system/custom-canopy-estimate.webp"
-            alt=""
+            alt="infinite canopy system stock canopy estimate"
           />
         </section>
       </div>
 
       <div class="bwp-col-12 col">
-        <section style="margin-top: -8%;">
+        <section style="margin-top: 0;">
           
 <p class=".span"> </p>
     <div class="child">
-        <div class="calculator" id="calculator">
-            <label for="width" class="label">Total Width</label><br>
+        <div class="calculator_custom" id="calculator_custom">
+            <label for="widthCustom" class="label">Total Width</label><br>
             <div class="space">
-              <input type="number" min="1" max="100"  class="input" name="width" id="width" width="20" height="20" 
+              <input type="number" min="1" max="100"  class="input" name="widthCustom" id="widthCustom" width="20" height="20" 
               onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('calc').click()" />&nbsp;Feet
+                        document.getElementById('calcCustom').click()" />&nbsp;Feet
             </div>
         </div>
 
-        <div class="calculator">
-            <label for="length" class="label">Canopy Length</label><br>
+        <div class="calculator_custom">
+            <label for="lengthCustom" class="label">Canopy Length</label><br>
             <div class="space"> 
-               <input type="number" min="1" max="60" class="input" name="length" id="length" 
+               <input type="number" min="1" max="60" class="input" name="lengthCustom" id="lengthCustom" 
                onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('calc').click()"  />&nbsp;Feet<br>  
+                        document.getElementById('calcCustom').click()"  />&nbsp;Feet<br>  
             </div> 
         </div>
 
-        <div class="calculator">
-            <label for="length" class="label">Canopy Width</label><br>
+        <div class="calculator_custom">
+            <label for="lengthCustom" class="label">Canopy Width</label><br>
             <div class="space"> 
-               <input type="number" min="4" max="12" class="input" name="canopyWidth" id="canopyWidth" 
+               <input type="number" min="4" max="12" class="input" name="canopyWidthCustom" id="canopyWidthCustom" 
                onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('calc').click()"  />&nbsp;Feet<br>  
+                        document.getElementById('calcCustom').click()"  />&nbsp;Feet<br>  
             </div> 
         </div>
 
 
-        <div class="button calculator ">
-            <input type="button" id="calc" class="btn" value="calculate" onClick="calculate();" 
+        <div class="button calculator_custom ">
+            <input type="button" id="calcCustom" class="btn" value="calculate" onClick="calculateCustom();" 
             onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('calc').click()" />
+                        document.getElementById('calcCustom').click()" />
         </div>
         
     </div>
-    <div class="Premium" id="explain">
+    <div class="Premium" id="explainCustom">
        
     </div>
     
 
     <div class="child1">
-        <div class="show" id="show">
+        <div class="showCustom" id="showCustom">
 
         </div>
     </div>
@@ -840,36 +860,36 @@
 
 <script type="text/javascript">
 
-    function calculate(){
-        var width= document.getElementById("width").value;
-        var canopyWidth = document.getElementById("canopyWidth").value;
+    function calculateCustom(){
+        var widthCustom= document.getElementById("widthCustom").value;
+        var canopyWidthCustom = document.getElementById("canopyWidthCustom").value;
 
 
-        var ratio = canopyWidth/width;
+        var ratio = canopyWidthCustom/widthCustom
         if(ratio >0)
         {
-            var section=parseInt(Math.ceil((width)/Math.ceil(canopyWidth)));
-            var graphicWidth = 20 * canopyWidth;
-            var length= document.getElementById("length").value;
-            var panels=parseInt(Math.round((length)*12/22.5));
+            var section=parseInt(Math.ceil((widthCustom)/Math.ceil(canopyWidthCustom)));
+            var graphicWidthCustom = 20 * canopyWidthCustom;
+            var lengthCustom= document.getElementById("lengthCustom").value;
+            var panels=parseInt(Math.round((lengthCustom)*12/22.5));
           
            // document.getElementById("panels").value=panels;
-            var myTable= "<table class='table' cellspacing='5' >";
+            var myTableCustom= "<table class='table' cellspacing='5' >";
             for (var i=0; i<panels; i++) {
-                myTable+="<tr'>";
+                myTableCustom+="<tr'>";
                 for(var j=0; j<section; j++){
-                    myTable+="<td class ='graphic_box'>&nbsp;</td>";
+                    myTableCustom+="<td class='graphic_box_custom'>&nbsp;</td>";
                 }
-                myTable+="</tr>";
+                myTableCustom+="</tr>";
 
             }
-            myTable+="</table>";
+            myTableCustom+="</table>";
               
             
             
             var premFab;
             var satndFab;
-            if (parseInt(canopyWidth) > parseInt(width) || parseInt(canopyWidth) > 12)
+            if (parseInt(canopyWidthCustom) > parseInt(widthCustom) || parseInt(canopyWidthCustom) > 12)
             {
                 alert('Canopy Width cannot be Greater than 12 or Greater than Total Width');
                 return;
@@ -878,42 +898,42 @@
             else
             {
 
-                if(canopyWidth <= 4)
+                if(canopyWidthCustom <= 4)
                 {
                     premFab= (section*panels*140.00);
                     satndFab= (section*panels*120.00);
                 }
-                else if(canopyWidth >=4 && canopyWidth <=5)
+                else if(canopyWidthCustom >=4 && canopyWidthCustom <=5)
                 {
                     premFab= (section*panels*150.00);
                     satndFab= (section*panels*130.00);
                 }
-                else if(canopyWidth>=5 &&   canopyWidth <= 6)
+                else if(canopyWidthCustom>=5 &&   canopyWidthCustom <= 6)
                 {
                     premFab= (section*panels*180.00);
                     satndFab= (section*panels*160.00);
                 }
-                else if(canopyWidth>=6 && canopyWidth <= 7)
+                else if(canopyWidthCustom>=6 && canopyWidthCustom <= 7)
                 {
                     premFab= (section*panels*210.00);
                     satndFab= (section*panels*180.00);
                 }   
-                else if(canopyWidth>=7 && canopyWidth <= 8)
+                else if(canopyWidthCustom>=7 && canopyWidthCustom <= 8)
                 {
                     premFab= (section*panels*240.00);
                     satndFab= (section*panels*210.00);
                 }
-                else if(canopyWidth>=8 && canopyWidth <= 9)
+                else if(canopyWidthCustom>=8 && canopyWidthCustom <= 9)
                 {
                     premFab= (section*panels*270.00);
                     satndFab= (section*panels*240.00);
                 }
-                else if(canopyWidth>=9 && canopyWidth <= 10)
+                else if(canopyWidthCustom>=9 && canopyWidthCustom <= 10)
                 {
                     premFab= (section*panels*300.00);
                     satndFab= (section*panels*270.00);
                 }
-                else if(canopyWidth>=10 && canopyWidth ==11)
+                else if(canopyWidthCustom>=10 && canopyWidthCustom ===11)
                 {
                     premFab= (section*panels*360.00);
                     satndFab= (section*panels*300.00);
@@ -923,19 +943,19 @@
                     premFab= (section*panels*420.00);
                     satndFab= (section*panels*360.00);
                 }
-                document.getElementById("show").innerHTML= myTable;
+                document.getElementById("showCustom").innerHTML= myTableCustom;
             }
  
-            var explain= "<p class='fon'><br>You need <b>"+section+"</b> Sections/Rows of Infinity Canopy with <b>"+panels+"</b> panels each. The estimate for your canopy is:  <br><br><b> $"+premFab+".00 with Premium Fabric* <br>$"+satndFab+".00 with Standard Fabric<br><br>*Add 20% for Serge Ferrari fabric. <br>*Add 20% for Sunbrella fire rated fabric and fabrics marked with astric* (see fabric card)<br><br>Optional Items: Need one not both.<br>Magnetic Latch, $65.00 ea.<br> Ball Bearing Pulley System, $65 ea.</b></p>";
-            document.getElementById("explain").innerHTML= explain;  
+            var explainCustom= "<p class='font_custom'><br>You need <b>"+section+"</b> section(s)/row(s) of Infinity Canopy with <b>"+panels+"</b> panels each. The estimate for your canopy is:  <br><br><b> $"+premFab+".00 with Premium Fabric* <br>$"+satndFab+".00 with Standard Fabric<br><br>*Add 20% for Serge Ferrari fabric. <br>*Add 20% for Sunbrella fire rated fabric and fabrics marked with astric* (see fabric card)<br><br>Optional Items: Need one not both.<br>Magnetic Latch, $65.00 ea.<br> Ball Bearing Pulley System, $65 ea.</b></p>";
+            document.getElementById("explainCustom").innerHTML= explainCustom;  
         }
         else
         {
-           document.getElementById("explain").innerHTML = "<p class='fon'><br> Canopy Width Must Be greater Than Zero</p>";
+           document.getElementById("explainCustom").innerHTML = "<p class='fon'><br> Canopy Width Must Be greater Than Zero</p>";
         }
 
-        var x = document.getElementsByClassName('graphic_box')
-        var w = 10 * canopyWidth + 'px';
+        var x = document.getElementsByClassName('graphic_box_custom')
+        var w = 10 * canopyWidthCustom + 'px';
         for(i=0; i<x.length;i++)
         {
           x[i].style.width = w;
@@ -1030,12 +1050,169 @@
           </div>
 
           <div id="projects" class="cbp">
+
+
+
+
+
+
+
+            <div class="cbp-item">
+              <div class="project-item">
+                <div class="project-image">
+                  <img
+                    src="assets/img/products/infinite-canopy-system/back-deck-roseville-ca.jpg"
+                    alt="infinite canopy system charcoal"
+                  />
+                </div>
+                <div class="project-detail">
+                  <h4 class="title">
+                    Back Deck <br />
+                    in Roseville
+                  </h4>
+                </div>
+                <a
+                  class="project-zoom cbp-lightbox"
+                  href="assets/img/products/infinite-canopy-system/back-deck-roseville-ca.jpg"
+                  data-title="infinity canopy system"
+                >
+                  <i class="fa fa-arrows-alt"></i>
+                </a>
+              </div>
+              <!-- /.project-item -->
+            </div>
+            <!-- /.cbp-item -->
+
+
+            <div class="cbp-item">
+              <div class="project-item">
+                <div class="project-image">
+                  <img
+                    src="assets/img/products/infinite-canopy-system/backyard-wood-pergola-roseville-ca.jpg"
+                    alt="infinite canopy system charcoal sunbrella danville"
+                  />
+                </div>
+                <div class="project-detail">
+                  <h4 class="title">
+                    Backyard Wood Pergola <br />
+                    in Roseville
+                  </h4>
+                </div>
+                <a
+                  class="project-zoom cbp-lightbox"
+                  href="assets/img/products/infinite-canopy-system/backyard-wood-pergola-roseville-ca.jpg"
+                  data-title="infinity canopy system"
+                >
+                  <i class="fa fa-arrows-alt"></i>
+                </a>
+              </div>
+              <!-- /.project-item -->
+            </div>
+            <!-- /.cbp-item -->
+
+
+            <div class="cbp-item">
+              <div class="project-item">
+                <div class="project-image">
+                  <img
+                    src="assets/img/products/infinite-canopy-system/poolside-elkhork-ca-1.jpg"
+                    alt="infinite canopy system charcoal"
+                  />
+                </div>
+                <div class="project-detail">
+                  <h4 class="title">
+                    Poolside<br />
+                    in Elkhork
+                  </h4>
+                </div>
+                <a
+                  class="project-zoom cbp-lightbox"
+                  href="assets/img/products/infinite-canopy-system/poolside-elkhork-ca-1.jpg"
+                  data-title="infinity canopy system"
+                >
+                  <i class="fa fa-arrows-alt"></i>
+                </a>
+              </div>
+              <!-- /.project-item -->
+            </div>
+            <!-- /.cbp-item -->
+
+
+            <div class="cbp-item">
+              <div class="project-item">
+                <div class="project-image">
+                  <img
+                    src="assets/img/products/infinite-canopy-system/poolside-elkhork-ca-2.jpg"
+                    alt="infinite canopy system"
+                  />
+                </div>
+                <div class="project-detail">
+                  <h4 class="title">
+                    Poolside<br />
+                    in Elkhork
+                  </h4>
+                </div>
+                <a
+                  class="project-zoom cbp-lightbox"
+                  href="assets/img/products/infinite-canopy-system/poolside-elkhork-ca-2.jpg"
+                  data-title="infinity canopy system"
+                >
+                  <i class="fa fa-arrows-alt"></i>
+                </a>
+              </div>
+              <!-- /.project-item -->
+            </div>
+            <!-- /.cbp-item -->
+
+
+            <div class="cbp-item">
+              <div class="project-item">
+                <div class="project-image">
+                  <img
+                    src="assets/img/products/infinite-canopy-system/poolside-rocklin-ca.jpg"
+                    alt="infinite canopy system"
+                  />
+                </div>
+                <div class="project-detail">
+                  <h4 class="title">
+                    Poolside <br />
+                    in Rocklin
+                  </h4>
+                </div>
+                <a
+                  class="project-zoom cbp-lightbox"
+                  href="assets/img/products/infinite-canopy-system/poolside-rocklin-ca.jpg"
+                  data-title="infinity canopy system"
+                >
+                  <i class="fa fa-arrows-alt"></i>
+                </a>
+              </div>
+              <!-- /.project-item -->
+            </div>
+            <!-- /.cbp-item -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="cbp-item">
               <div class="project-item">
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/charcoal-sunbrella-danville.jpg"
-                    alt="image"
+                    alt="infinite canopy system charcoal sunbrella danville"
                   />
                 </div>
                 <div class="project-detail">
@@ -1047,7 +1224,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/charcoal-sunbrella-danville.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1061,7 +1238,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/football-team-colors-sunbrella-moraga.jpg"
-                    alt="image"
+                    alt="infinitecanopy system football team colors sunbrella moraga"
                   />
                 </div>
                 <div class="project-detail">
@@ -1073,7 +1250,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/football-team-colors-sunbrella-moraga.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1087,7 +1264,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-capitola.jpg"
-                    alt="image"
+                    alt="infinite canopy system mesh phifertex plus capitola"
                   />
                 </div>
                 <div class="project-detail">
@@ -1099,7 +1276,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-capitola.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1113,7 +1290,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-cupertino.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1125,7 +1302,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-cupertino.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1139,7 +1316,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-livermore.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1151,7 +1328,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-livermore.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1165,7 +1342,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-metalic-morgan-hill.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1177,7 +1354,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-metalic-morgan-hill.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1191,7 +1368,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-oakland.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1203,7 +1380,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-oakland.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1217,7 +1394,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-santa-clara.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1229,7 +1406,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-santa-clara.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1243,7 +1420,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-brentwood.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1255,7 +1432,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/mesh-phifertex-plus-brentwood.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1269,7 +1446,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/natural-sunbrella-los-gatos.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1281,7 +1458,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/natural-sunbrella-los-gatos.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1295,7 +1472,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/pergola-mount -sunbrella-linen-morgan-hill.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1307,7 +1484,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/pergola-mount -sunbrella-linen-morgan-hill.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1321,7 +1498,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/pergola-mount-sunbrella-natural-pleasant-hill.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1333,7 +1510,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/pergola-mount-sunbrella-natural-pleasant-hill.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1347,7 +1524,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/pergola-mount-sunbrella-natural-san-jose.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1359,7 +1536,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/pergola-mount-sunbrella-natural-san-jose.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1373,7 +1550,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/phifertex-plus-los-gatos.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1385,7 +1562,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/phifertex-plus-los-gatos.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1399,7 +1576,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/phifertex-plus-orinda.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1411,7 +1588,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/phifertex-plus-orinda.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1425,7 +1602,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/roof-mount-phifertex-plus-los-gatos.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1437,7 +1614,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/roof-mount-phifertex-plus-los-gatos.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1451,7 +1628,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/roof-mount-phifertex-plus-los-gatos2.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1463,7 +1640,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/roof-mount-phifertex-plus-los-gatos2.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1477,7 +1654,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/sunbrella-linen-piedmont.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1489,7 +1666,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/sunbrella-linen-piedmont.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1503,7 +1680,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/sunbrella-linen-san-ramon.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1515,7 +1692,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/sunbrella-linen-san-ramon.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1529,7 +1706,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/sunbrella-linen-scotts-valley.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1541,7 +1718,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/sunbrella-linen-scotts-valley.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1555,7 +1732,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/sunbrella-natural-ocean-blue-color-cupertino.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1567,7 +1744,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/sunbrella-natural-ocean-blue-color-cupertino.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1581,7 +1758,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/sunbrells-pleasanton.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1590,7 +1767,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/sunbrells-pleasanton.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1604,7 +1781,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/two-color-sunbrella-san-jose.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1616,7 +1793,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/two-color-sunbrella-san-jose.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1630,7 +1807,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/wall-mount-phifertex-plus-san-jose.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1642,7 +1819,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/wall-mount-phifertex-plus-san-jose.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1656,7 +1833,7 @@
                 <div class="project-image">
                   <img
                     src="assets/img/products/infinite-canopy-system/white-sunbrella-alameda.jpg"
-                    alt="image"
+                    alt="infinite-canopy-system"
                   />
                 </div>
                 <div class="project-detail">
@@ -1665,7 +1842,7 @@
                 <a
                   class="project-zoom cbp-lightbox"
                   href="assets/img/products/infinite-canopy-system/white-sunbrella-alameda.jpg"
-                  data-title="Backlit Awning"
+                  data-title="infinity canopy system"
                 >
                   <i class="fa fa-arrows-alt"></i>
                 </a>
@@ -1696,7 +1873,7 @@
             <div class="bwp-row">
               <div class="bwp-col-12 col">
                 <div class="copy-right">
-                  Sunset Canvas Awning &copy; &nbsp; All Rights Reserved 2019
+                  Sunset Canvas Awning &copy; &nbsp; All Rights Reserved 2020
                 </div>
               </div>
             </div>
